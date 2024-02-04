@@ -79,13 +79,9 @@ Cypress.Commands.add('acessaEdicaoCurso', (curso) => {
     cy.wait(Cypress.env('SERVER_WAIT'));
 
     // Verifica se o primeiro curso exibido é o que deve ser editado
-    if (cy.get(':nth-child(1) > .ordered-content > header > h4').contains(course.Nome)) {
+    if (cy.get(':nth-child(1) > .ordered-content > header > h4').contains(curso.Nome)) {
         cy.get(':nth-child(1) > .ordered-content > .actions > .btn-edit > .mdi').click();
         cy.wait(Cypress.env('SERVER_WAIT'));
-    } else if (cy.get(':nth-child(2) > .ordered-content > header > h4').contains(course.Nome)) {
-        cy.get(':nth-child(2) > .ordered-content > .actions > .btn-edit > .mdi').click();
-    } else {
-        cy.get(':nth-child(3) > .ordered-content > .actions > .btn-edit > .mdi').click();
     }
 
     // Verifica se está na página de edição do curso correto
