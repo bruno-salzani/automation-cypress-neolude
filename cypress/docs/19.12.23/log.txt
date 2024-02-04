@@ -1,0 +1,45 @@
+Data: 19/12/23
+Analista: Bruno
+Ambiente: HPE PROD
+Objetivo: Migração de conteudo
+
+Falhas:
+- Um dos cursos ficou como em produção na criação do curso
+- Deu timeout ao tentar acessar a pagina de criação de curso (evidencia cy_erro_1)
+
+Observações:
+- A falha numero 2 fez com que perdesse a continuidade do teste, sendo necessário rodar a automação novamente mas com o seguinte ajuste, 
+a criação dos cursos começa onde parou (cursos.slice(45, 49).forEach), com isso esse problema não gerou nenhum impacto ou atraso
+
+│ Tests:        87
+│ Passing:      87                    
+│ Failing:      0                     
+│ Pending:      0                     
+│ Skipped:      0                     
+│ Screenshots:  0                     
+│ Video:        true                  
+│ Duration:     34 minutes, 47 seconds
+│ Estimated:    18 minutes, 14 seconds
+│ Spec Ran:     1-curso-criacao.cy.js
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        132                                                                              │
+  │ Passing:      131                                                                              │
+  │ Failing:      1                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  1                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     82 minutes, 54 seconds                                                           │
+  │ Estimated:    57 minutes, 37 seconds                                                           │
+  │ Spec Ran:     3-curso-configuracao.cy.js                                                       │
+  └────────────────────────────────────────────
+
+
+ √  3-curso-configuracao.cy.js             1:09:05      129      129        -        -        - │
+
+
+ na hora de rodar a criação de turma eu tive que fazer ajustes pq faltou ações

@@ -1,0 +1,74 @@
+
+Erros:
+1) Configura o curso: VERIFICAÇÃO VISUAL DO SISTEMA ELÉTRICO - 2
+3) Configura o curso: EXPLICAÇÃO DAS ESTIMATIVAS
+4) "before each" hook for "Configura o curso: PONTOS - RECEBENDO O VEÍCULO"
+2) Configura o curso: DIREÇÃO ELÉTRICA
+1) Configura o curso: LANÇAMENTO NOVO RECALL SUZUKI - VÁLVULA DE CONTROLE DA BOMBA DE VÁCUO - VITARA E S-CROSS
+1) Configura o curso: VERIFICAÇÃO VISUAL DO SISTEMA ELÉTRICO - 2
+2) Configura o curso: DIAGNÓSTICO DE SINTOMA DO MOTOR COM DIFICULDADE DE PARTIDA 1-1
+2) Categoriza o curso: INSTALANDO AS VÁLVULAS E O EIXO DE COMANDO NO CABEÇOTE
+
+Categoriza o curso: INSTALANDO AS VÁLVULAS E O EIXO DE COMANDO NO CABEÇOTE:
+Categoriza o curso: INSTALANDO AS VÁLVULAS E O EIXO DE COMANDO NO CABEÇOTE:
+Categoriza o curso: REVISÃO REMONTAGEM EIXO DE ENTRADA:
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        121
+                     │
+  │ Passing:      118
+                     │
+  │ Failing:      3
+                     │
+  │ Pending:      0
+                     │
+  │ Skipped:      0
+                     │
+  │ Screenshots:  3
+                     │
+  │ Video:        true
+                     │
+  │ Duration:     74 minutes, 19 seconds
+                     │
+  │ Estimated:    80 minutes, 36 seconds
+                     │
+  │ Spec Ran:     3-curso-configuracao.cy.js
+                     │
+  └─────────────────────
+
+    1) Preenche categoria dos cursos
+       Categoriza o curso: INSTALANDO AS VÁLVULAS E O EIXO DE COMANDO NO CABEÇOTE:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(1) > .ordered-content > .actions > .btn-edit > .mdi`, but never found it.      
+      at Context.eval (webpack://cypress2/./cypress/support/commands.js:78:7)
+
+  2) Preenche categoria dos cursos
+       Categoriza o curso: INSTALANDO AS VÁLVULAS E O EIXO DE COMANDO NO CABEÇOTE:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(1) > .ordered-content > .actions > .btn-edit > .mdi`, but never found it.      
+      at Context.eval (webpack://cypress2/./cypress/support/commands.js:78:7)
+
+  3) Preenche categoria dos cursos
+       Categoriza o curso: REVISÃO REMONTAGEM EIXO DE ENTRADA:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(1) > .ordered-content > .actions > .btn-edit > .mdi`, but never found it.      
+      at Context.eval (webpack://cypress2/./cypress/support/commands.js:78:7)
+
+
+  │ Tests:        211                                                                              │
+  │ Passing:      208                                                                              │
+  │ Failing:      3                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  3                                                                                │
+  │ Video:        true                                                                             │
+  │ Duration:     104 minutes, 27 seconds                                                          │
+  │ Estimated:    32 minutes, 28 seconds                                                           │
+  │ Spec Ran:     4-curso-categoria.cy.js                                                          │
+  └──────────────────────────────────────── 21:58
+
+
+2) Registra a turma do curso: COMO LIMPAR O VEÍCULO
+1) Registra a turma do curso: CUMPRIR PROMESSAS
+Registra a turma do curso: INSTALANDO AS VÁLVULAS E O EIXO DE COMANDO NO CABEÇOTE
