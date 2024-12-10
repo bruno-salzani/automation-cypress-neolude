@@ -1,18 +1,56 @@
-Projeto criado para automatizar a ação de criação de conteúdo dentro da plataforma LMS Neolude, economizando o tempo do time de implantação.
+# Automação de Criação de Cursos - LMS Neolude
 
-Descrição do processo melhorado
-O time  de implantação recebe uma ou mais planilhas, contendo todas as informações necessárias para que os analistas de implantação criem estes conteudos manualmente um a um na plataforma,
-uma operação repetitiva e de alto custo de tempo.
+Este projeto foi desenvolvido para automatizar a criação de conteúdos na plataforma LMS **Neolude**, reduzindo o tempo e o esforço do time de implantação. Utilizando o framework **Cypress**, a automação substitui o processo manual de criação de cursos, aumentando a eficiência e eliminando possíveis erros humanos.
 
-Utilizando o cypress, automatizamos a criação de cursos dentro da plataforma,
-1. Time de implantação recebe planilha com os dados para criação
-2. Populamos a planilha de automação com as informações a serem criadas
-3. Rodamos a automação
+## 🛠️ Funcionalidades
 
-a automação segue o seguinte 
-1. Converte os dados da planilha em json
-2. Realiza login na plataforma
-3. Acessa a página de criação de cursos
-4. Cria o curso com as informações
+- **Importação de dados**: Converte planilhas Excel com as informações dos cursos para JSON.
+- **Login automatizado**: Acesso seguro à plataforma como administrador.
+- **Criação de cursos**: Realiza a criação dos cursos, incluindo:
+  - Adição de descrições detalhadas.
+  - Configuração de parâmetros e permissões.
+  - Classificação dos cursos por categorias.
+  - Registro de turmas associadas aos cursos.
 
-esses cursos são parametrizados com descrições, configurações, permissões
+## 🚀 Fluxo de Automação
+
+1. O time de implantação recebe uma planilha Excel com os dados necessários.
+2. A planilha é convertida para JSON automaticamente.
+3. A automação realiza o login na plataforma e executa:
+   - Criação do curso.
+   - Configuração de parâmetros e permissões.
+   - Adição de categorias e registro de turmas.
+4. O processo é repetido para todos os cursos da planilha.
+
+## 📂 Estrutura do Projeto
+
+- **Scripts de automação**: Localizados na pasta `cypress/e2e`.
+- **Fixtures**: Dados simulados para os testes, armazenados em `cypress/fixtures`.
+- **Conversão de planilha**: Script `converte-excel-em-json.cy.js`.
+- **Automação principal**: Script `curso-criacao.cy.js` dividido em etapas específicas.
+
+## 🧪 Tecnologias Utilizadas
+
+- [Cypress](https://www.cypress.io/): Framework para automação de testes end-to-end.
+- [Node.js](https://nodejs.org/): Ambiente de execução JavaScript.
+- **Mochawesome**: Geração de relatórios detalhados dos testes.
+
+## 📦 Como Executar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/bruno-salzani/neolude-automation.git
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Configure o ambiente no arquivo `cypress.config.js`.
+4. Execute os testes:
+   ```bash
+   npx cypress open
+   ```
+
+## 🔗 Link do Repositório
+
+[Repositório no GitHub](https://github.com/bruno-salzani/neolude-automation)
