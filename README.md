@@ -3,7 +3,7 @@
 Este projeto foi desenvolvido para automatizar a criação de conteúdos na plataforma LMS [Neolude](https://inspand.com.br/plataforma-de-aprendizagem/), com o objetivo de reduzir o tempo e o esforço do time de implantação. Utilizando o framework Cypress, a automação substitui o processo manual de criação de cursos, aumentando a eficiência e evitando erros humanos.
 
 ## Objetivo do Projeto
-Automatizar a criação de cursos na plataforma Neolude, incluindo importação de dados, login automatizado e configuração de cursos, com foco em melhorar a produtividade do time de implantação.
+Automatizar a criação de cursos na plataforma [Neolude](https://inspand.com.br/plataforma-de-aprendizagem/), incluindo importação de dados, login automatizado e configuração de cursos, com foco em melhorar a produtividade do time de implantação.
 
 ## Funcionalidades
 
