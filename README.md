@@ -1,8 +1,11 @@
-# Automação de Criação de Cursos - LMS Neolude
+# Automação de Testes com Cypress (Neolude)
 
-Este projeto foi desenvolvido para automatizar a criação de conteúdos na plataforma LMS **Neolude**, reduzindo o tempo e o esforço do time de implantação. Utilizando o framework **Cypress**, a automação substitui o processo manual de criação de cursos, aumentando a eficiência e eliminando possíveis erros humanos.
+Este projeto foi desenvolvido para automatizar a criação de conteúdos na plataforma LMS [Neolude](https://inspand.com.br/plataforma-de-aprendizagem/), com o objetivo de reduzir o tempo e o esforço do time de implantação. Utilizando o framework Cypress, a automação substitui o processo manual de criação de cursos, aumentando a eficiência e evitando erros humanos.
 
-## 🛠️ Funcionalidades
+## Objetivo do Projeto
+Automatizar a criação de cursos na plataforma Neolude, incluindo importação de dados, login automatizado e configuração de cursos, com foco em melhorar a produtividade do time de implantação.
+
+## Funcionalidades
 
 - **Importação de dados**: Converte planilhas Excel com as informações dos cursos para JSON.
 - **Login automatizado**: Acesso seguro à plataforma como administrador.
@@ -12,7 +15,7 @@ Este projeto foi desenvolvido para automatizar a criação de conteúdos na plat
   - Classificação dos cursos por categorias.
   - Registro de turmas associadas aos cursos.
 
-## 🚀 Fluxo de Automação
+## Fluxo de Automação
 
 1. O time de implantação recebe uma planilha Excel com os dados necessários.
 2. A planilha é convertida para JSON automaticamente.
@@ -22,20 +25,20 @@ Este projeto foi desenvolvido para automatizar a criação de conteúdos na plat
    - Adição de categorias e registro de turmas.
 4. O processo é repetido para todos os cursos da planilha.
 
-## 📂 Estrutura do Projeto
+##  Estrutura do Projeto
 
 - **Scripts de automação**: Localizados na pasta `cypress/e2e`.
 - **Fixtures**: Dados simulados para os testes, armazenados em `cypress/fixtures`.
 - **Conversão de planilha**: Script `converte-excel-em-json.cy.js`.
 - **Automação principal**: Script `curso-criacao.cy.js` dividido em etapas específicas.
 
-## 🧪 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - [Cypress](https://www.cypress.io/): Framework para automação de testes end-to-end.
 - [Node.js](https://nodejs.org/): Ambiente de execução JavaScript.
-- **Mochawesome**: Geração de relatórios detalhados dos testes.
+- [Mochawesome](https://github.com/adamgruber/mochawesome): Geração de relatórios detalhados dos testes.
 
-## 📦 Como Executar
+## Como Executar
 
 1. Clone o repositório:
    ```bash
@@ -51,6 +54,6 @@ Este projeto foi desenvolvido para automatizar a criação de conteúdos na plat
    npx cypress open
    ```
 
-## 🔗 Link do Repositório
+## Link do Repositório
 
 [Repositório no GitHub](https://github.com/bruno-salzani/neolude-automation)
