@@ -56,4 +56,4 @@ Automatizar a criação de cursos na plataforma [Neolude](https://inspand.com.br
 
 ## Link do Repositório
 
-[Repositório no GitHub](https://github.com/bruno-salzani/neolude-automation)
+[Repositório no GitHub](https://github.com/bruno-salzani/automation-cypress-neolude)
